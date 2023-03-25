@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+    <style>
+        .responsive {
+          width: 100%;
+          height: auto;
+        }
+    </style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MFIT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg nbg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MFIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="=mx-2" style="margin: 5px;">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                      </button>
+                      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">
+                        Sign Up
+                      </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+  
+  <!-- login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login to MFIT</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up to MFIT</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+
+                <div class="mb-5">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name1" >
+                  </div>
+                  <div class="mb-5">
+                    <label for="phoneno" class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" id="phno1" >
+                  </div>
+                <div class="mb-5">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-5">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-5">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address1" >
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="pic1.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to MFIT!</h5>
+                    <p>“If you want something you've never had, you must be willing to do something you've never done.”
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pic2.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to MFIT!</h5>
+                    <p>“All progress takes place outside the comfort zone.”</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="pic3.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Welcome to MFIT!</h5>
+                    <p>¨Tough times don`t last. Tough people do.¨</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic4.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">Star X Hexa PVC Dumbbell Set for Home Gym Workout, Dumbells for Fitness.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹269.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic5.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">LEW Pro Faux Leather Training/Fight/ MMA/ Muay Thai Boxing Gloves with a Pair of Hand Wraps.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹839.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic6.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">Yes4All Combo Special: Vinyl Coated Kettlebell Weight Sets - Weight Available: (5, 10, 15 lbs).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹2649.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic7.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">Konark Rubber Coated Fixed Weight Lifting Straight Gym Rod/Barbell 10KG Internal Dia 30MM (10KG).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹2849.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic8.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">SPARNOD FITNESS STH-4100 (4.5HP Peak) Automatic and Foldable Treadmill with Auto-Incline.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹23990.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic9.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">Azuka Climbing Rope PP, 10Ft Length 1.5Inch Thickness, Black.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹6995.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic10.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">RMOUR Unfilled Heavy PU Punch Bag Boxing MMA Sparring Punching Training Kick Boxing Muay Thai with Hanging Chain (5 Feet / 60 Inch).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹1350.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic11.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">Nike Mens Flex Experience Rn 11 Nn RED Running Shoe - 11 UK (12 US) (DD9284-003).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹4559.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="pic12.jpg" alt="" class="responsive" width="600" height="400">
+                    <div class="card-body">
+                        <p class="card-text">LAFILLETTE New Jump Ropes With Counter Sports Fitness Adjustable Counting Jump Skip Rope (Black).</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Buy Now</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#loginModal">Add to Cart</button>
+                            </div>
+                            <small class="text-muted">₹320.00</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <footer class="container">
+        <p style="margin-top: 2%; text-align: right;" class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2023-2024 MFIT, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

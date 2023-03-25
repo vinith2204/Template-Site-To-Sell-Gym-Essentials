@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MFIT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg nbg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MFIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="=mx-2" style="margin: 5px;">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                      </button>
+                      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#signupModal">
+                        Sign Up
+                      </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+  
+  <!-- login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login to MFIT</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up to MFIT</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+
+                <div class="mb-5">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name1" >
+                  </div>
+                  <div class="mb-5">
+                    <label for="phoneno" class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" id="phno1" >
+                  </div>
+                <div class="mb-5">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-5">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-5">
+                    <label for="address" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="address1" >
+                  </div>
+                
+                <button type="submit" class="btn btn-primary">Create</button>
+              </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <div class="container">
+        <h1 style="margin:10px; text-align:center;">About Us</h1>
+        <div >
+        <p style="font-size:30px; margin:10px; font-family: monospace;">MFIT is a leading seller of fitness equipment in over 100 countries across the world, including India. From treadmills and cross trainers to dumbbell racks and utility benches, MFIT offers a variety of gym and fitness related gear and machines. Apart from sales, MFIT also offers after sales services and equipment repairs, using genuine spare parts.</p></br>
+        </div>
+    </div>
+
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3" style="text-align: center;">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+                
+            <img src="devicon.png" alt="" class="responsive" width="40" height="400" style="margin-left: 10% ; padding: 3%;">
+
+            <div class="container" style="padding: 6%;">
+                    <h2>Name</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>description.</p>
+                    <p>email@domain.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+           
+            <img src="devicon.png" alt="" class="responsive" width="40" height="400" style="margin-left: 10% ; padding: 3%;">
+            <div class="container" style="padding: 6%;">
+                <h2>Name</h2>
+                    <p class="title">Art Director</p>
+                    <p>description.</p>
+                    <p>email@domain.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+            <img src="devicon.png" alt="" class="responsive" width="40" height="400" style="margin-left: 10%; padding: 3%;">
+            <div class="container" style="padding: 6%;">
+                <h2>Name</h2>
+                    <p class="title">Designer</p>
+                    <p>description.</p>
+                    <p>email@domain.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <p style="margin-top: 2%; text-align: right;" class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2023-2024 MFIT, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
